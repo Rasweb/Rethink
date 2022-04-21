@@ -1,0 +1,21 @@
+@mixin flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin desktop() {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media screen and (min-width: 640px) {
+    @content;
+  }
+}

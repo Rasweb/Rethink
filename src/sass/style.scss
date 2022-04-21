@@ -1,0 +1,9 @@
+@use "mixins";
+@use "variables";
+@use "header";
+
+body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}

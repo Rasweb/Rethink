@@ -1,0 +1,22 @@
+@use "mixins";
+@use "variables";
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$light-background;
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar {
+    @include mixins.flex-r;
+    justify-content: right;
+    width: auto;
+    a {
+      margin-left: 10%;
+      color: variables.$headline;
+      text-decoration: none;
+    }
+  }
+}
