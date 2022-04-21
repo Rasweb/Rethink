@@ -1,0 +1,24 @@
+{
+  "name": "from-graphic_profile-to-web_projects",
+  "version": "1.0.0",
+  "description": "From Graphic profile to Web Projects",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/sass/style.scss:src/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rasweb/From-Graphic_Profile-To-Web_Projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rasweb/From-Graphic_Profile-To-Web_Projects/issues"
+  },
+  "homepage": "https://github.com/Rasweb/From-Graphic_Profile-To-Web_Projects#readme",
+  "dependencies": {
+    "sass": "^1.50.1"
+  }
+}
