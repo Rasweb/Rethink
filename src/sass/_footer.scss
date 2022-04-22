@@ -6,6 +6,9 @@ footer {
   @include mixins.ipad {
     height: 20vh;
   }
+  @include mixins.desktop {
+    height: 40vh;
+  }
   background-color: variables.$dark-background;
   display: flex;
   flex-flow: row wrap;
@@ -14,12 +17,22 @@ footer {
     text-align: center;
     @include mixins.m-headline-font-white;
     font-size: 14pt;
+    @include mixins.ipad {
+      font-size: 16pt;
+    }
+    @include mixins.desktop {
+      font-size: 20pt;
+    }
   }
 
   .contactCont {
     @include mixins.flex-r;
     @include mixins.ipad {
       margin-left: -2%;
+    }
+    @include mixins.desktop {
+      margin-left: 0%;
+      //margin-left: -20%;
     }
     img {
       padding: 10px;
@@ -29,6 +42,10 @@ footer {
       @include mixins.ipad {
         width: 100px;
         height: 100px;
+      }
+      @include mixins.desktop {
+        width: 140px;
+        height: 140px;
       }
     }
     p {
@@ -43,6 +60,9 @@ footer {
     @include mixins.ipad {
       margin-bottom: 0%;
     }
+    @include mixins.desktop {
+      margin-left: 10%;
+    }
     img {
       margin-top: -30%;
       width: 180px;
@@ -50,6 +70,10 @@ footer {
       @include mixins.ipad {
         width: 120px;
         height: 120px;
+      }
+      @include mixins.desktop {
+        width: 300px;
+        height: 200px;
       }
     }
     h1 {
@@ -61,10 +85,17 @@ footer {
     @include mixins.ipad {
       margin-top: 0%;
     }
+    @include mixins.desktop {
+      //margin-right: -10%;
+      margin-left: 10%;
+    }
     p {
       text-align: center;
       color: variables.$pink-font;
       margin: 0%;
+      @include mixins.desktop {
+        font-size: 14pt;
+      }
     }
   }
 }

@@ -210,6 +210,11 @@ footer {
     height: 20vh;
   }
 }
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 40vh;
+  }
+}
 footer h1 {
   text-align: center;
   font-family: myriad-pro, sans-serif;
@@ -218,6 +223,16 @@ footer h1 {
   color: #f2f3f4;
   font-size: 14pt;
 }
+@media screen and (min-width: 640px) {
+  footer h1 {
+    font-size: 16pt;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer h1 {
+    font-size: 20pt;
+  }
+}
 footer .contactCont {
   display: flex;
   flex-direction: row;
@@ -225,6 +240,11 @@ footer .contactCont {
 @media screen and (min-width: 640px) {
   footer .contactCont {
     margin-left: -2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .contactCont {
+    margin-left: 0%;
   }
 }
 footer .contactCont img {
@@ -237,6 +257,12 @@ footer .contactCont img {
   footer .contactCont img {
     width: 100px;
     height: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .contactCont img {
+    width: 140px;
+    height: 140px;
   }
 }
 footer .contactCont p {
@@ -256,6 +282,11 @@ footer .socialCont {
     margin-bottom: 0%;
   }
 }
+@media screen and (min-width: 1024px) {
+  footer .socialCont {
+    margin-left: 10%;
+  }
+}
 footer .socialCont img {
   margin-top: -30%;
   width: 180px;
@@ -265,6 +296,12 @@ footer .socialCont img {
   footer .socialCont img {
     width: 120px;
     height: 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .socialCont img {
+    width: 300px;
+    height: 200px;
   }
 }
 footer .socialCont h1 {
@@ -278,10 +315,20 @@ footer .aboutCont {
     margin-top: 0%;
   }
 }
+@media screen and (min-width: 1024px) {
+  footer .aboutCont {
+    margin-left: 10%;
+  }
+}
 footer .aboutCont p {
   text-align: center;
   color: #cb86b9;
   margin: 0%;
+}
+@media screen and (min-width: 1024px) {
+  footer .aboutCont p {
+    font-size: 14pt;
+  }
 }
 
 body {
