@@ -205,6 +205,11 @@ footer {
   flex-flow: row wrap;
   justify-content: center;
 }
+@media screen and (min-width: 640px) {
+  footer {
+    height: 20vh;
+  }
+}
 footer h1 {
   text-align: center;
   font-family: myriad-pro, sans-serif;
@@ -217,15 +222,22 @@ footer .contactCont {
   display: flex;
   flex-direction: row;
 }
-footer .contactCont h1 {
-  width: 99vw;
-  margin-bottom: -8%;
+@media screen and (min-width: 640px) {
+  footer .contactCont {
+    margin-left: -2%;
+  }
 }
 footer .contactCont img {
   padding: 10px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+@media screen and (min-width: 640px) {
+  footer .contactCont img {
+    width: 100px;
+    height: 100px;
+  }
 }
 footer .contactCont p {
   text-align: center;
@@ -239,16 +251,32 @@ footer .contactCont p {
 footer .socialCont {
   margin-bottom: -10%;
 }
+@media screen and (min-width: 640px) {
+  footer .socialCont {
+    margin-bottom: 0%;
+  }
+}
 footer .socialCont img {
   margin-top: -30%;
   width: 180px;
   height: 180px;
+}
+@media screen and (min-width: 640px) {
+  footer .socialCont img {
+    width: 120px;
+    height: 120px;
+  }
 }
 footer .socialCont h1 {
   margin-bottom: 10%;
 }
 footer .aboutCont {
   margin-top: -10%;
+}
+@media screen and (min-width: 640px) {
+  footer .aboutCont {
+    margin-top: 0%;
+  }
 }
 footer .aboutCont p {
   text-align: center;

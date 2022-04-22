@@ -3,6 +3,9 @@
 
 footer {
   height: 70vh;
+  @include mixins.ipad {
+    height: 20vh;
+  }
   background-color: variables.$dark-background;
   display: flex;
   flex-flow: row wrap;
@@ -12,17 +15,21 @@ footer {
     @include mixins.m-headline-font-white;
     font-size: 14pt;
   }
+
   .contactCont {
     @include mixins.flex-r;
-    h1 {
-      width: 99vw;
-      margin-bottom: -8%;
+    @include mixins.ipad {
+      margin-left: -2%;
     }
     img {
       padding: 10px;
       width: 100px;
       height: 100px;
       border-radius: 50%;
+      @include mixins.ipad {
+        width: 100px;
+        height: 100px;
+      }
     }
     p {
       text-align: center;
@@ -33,10 +40,17 @@ footer {
   }
   .socialCont {
     margin-bottom: -10%;
+    @include mixins.ipad {
+      margin-bottom: 0%;
+    }
     img {
       margin-top: -30%;
       width: 180px;
       height: 180px;
+      @include mixins.ipad {
+        width: 120px;
+        height: 120px;
+      }
     }
     h1 {
       margin-bottom: 10%;
@@ -44,6 +58,9 @@ footer {
   }
   .aboutCont {
     margin-top: -10%;
+    @include mixins.ipad {
+      margin-top: 0%;
+    }
     p {
       text-align: center;
       color: variables.$pink-font;
