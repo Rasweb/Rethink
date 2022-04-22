@@ -5,6 +5,9 @@ header {
   @include mixins.flex-c;
   background-color: variables.$light-background;
   height: 46vh;
+  @include mixins.desktop {
+    height: 80vh;
+  }
   .logo {
     @include mixins.flex-r;
     width: 40px;
@@ -70,7 +73,7 @@ header {
     background-position: center;
     height: 87%;
     @include mixins.desktop {
-      height: 60%;
+      height: 70%;
     }
   }
 }

@@ -4,21 +4,42 @@
 main {
   height: 100vh;
   background-color: variables.$light-background;
-
+  @include mixins.ipad {
+    height: 40vh;
+  }
+  @include mixins.desktop {
+    height: 75vh;
+  }
   .albumCont {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     h1 {
-      width: 100vw;
+      width: 99vw;
       text-align: center;
       margin: 0%;
+      font-size: 14pt;
       @include mixins.headline-font;
+      @include mixins.ipad {
+        font-size: 24pt;
+      }
+      @include mixins.desktop {
+        font-size: 26pt;
+      }
     }
     img {
       padding: 10px;
       width: 200px;
       height: 200px;
+      @include mixins.ipad {
+        //padding: 10px;
+        width: 220px;
+        height: 220px;
+      }
+      @include mixins.desktop {
+        width: 350px;
+        height: 350px;
+      }
     }
     .album1,
     .album2,
@@ -32,9 +53,23 @@ main {
       margin-top: -4%;
       width: 50%;
       height: 20%;
+      font-size: 12pt;
+      @include mixins.ipad {
+        width: 55%;
+        height: 25%;
+        font-size: 14pt;
+        margin-top: -3%;
+      }
+      @include mixins.desktop {
+        width: 65%;
+        font-size: 16pt;
+      }
       @include mixins.m-headline-font;
       p:last-child {
         margin-top: -20%;
+        @include mixins.desktop {
+          margin-top: -10%;
+        }
       }
     }
   }
