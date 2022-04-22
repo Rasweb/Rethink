@@ -1,0 +1,41 @@
+@use "mixins";
+@use "variables";
+
+main {
+  height: 100vh;
+  background-color: variables.$light-background;
+
+  .albumCont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    h1 {
+      width: 100vw;
+      text-align: center;
+      margin: 0%;
+      @include mixins.headline-font;
+    }
+    img {
+      padding: 10px;
+      width: 200px;
+      height: 200px;
+    }
+    .album1,
+    .album2,
+    .album3 {
+      @include mixins.flex-c;
+      align-items: center;
+    }
+    .albumText {
+      text-align: center;
+      background-color: variables.$dark-background;
+      margin-top: -4%;
+      width: 50%;
+      height: 20%;
+      @include mixins.m-headline-font;
+      p:last-child {
+        margin-top: -20%;
+      }
+    }
+  }
+}

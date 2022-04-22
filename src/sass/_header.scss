@@ -4,7 +4,7 @@
 header {
   @include mixins.flex-c;
   background-color: variables.$light-background;
-  height: 100vh;
+  height: 46vh;
   .logo {
     @include mixins.flex-r;
     width: 40px;
@@ -68,7 +68,7 @@ header {
     background-image: url("../Assets/img/Winter.jpg");
     background-size: cover;
     background-position: center;
-    height: 40%;
+    height: 87%;
     @include mixins.desktop {
       height: 60%;
     }

@@ -1,7 +1,16 @@
 @use "variables";
 
+@mixin m-headline-font {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: variables.$pink-font;
+}
+
 @mixin headline-font {
-  font-family: sans-serif;
+  font-family: baskerville-display-pt, serif;
+  font-weight: 400;
+  font-style: normal;
   color: variables.$headline;
 }
 
