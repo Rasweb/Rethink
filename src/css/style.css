@@ -198,6 +198,63 @@ main .albumCont .albumText p:last-child {
   }
 }
 
+footer {
+  height: 70vh;
+  background-color: #404898;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer h1 {
+  text-align: center;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f2f3f4;
+  font-size: 14pt;
+}
+footer .contactCont {
+  display: flex;
+  flex-direction: row;
+}
+footer .contactCont h1 {
+  width: 99vw;
+}
+footer .contactCont img {
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+footer .contactCont p {
+  text-align: center;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #cb86b9;
+  font-size: 12pt;
+  margin-top: -10%;
+}
+footer .socialCont {
+  margin-bottom: -10%;
+}
+footer .socialCont img {
+  margin-top: -30%;
+  width: 180px;
+  height: 180px;
+}
+footer .socialCont h1 {
+  margin-bottom: 10%;
+}
+footer .aboutCont {
+  margin-top: -10%;
+}
+footer .aboutCont p {
+  text-align: center;
+  color: #cb86b9;
+  margin: 0%;
+}
+
 body {
   scroll-behavior: smooth;
   padding: 0;

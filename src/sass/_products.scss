@@ -64,7 +64,7 @@ main {
         width: 65%;
         font-size: 16pt;
       }
-      @include mixins.m-headline-font;
+      @include mixins.m-headline-font-pink;
       p:last-child {
         margin-top: -20%;
         @include mixins.desktop {

@@ -1,0 +1,52 @@
+@use "mixins";
+@use "variables";
+
+footer {
+  height: 70vh;
+  background-color: variables.$dark-background;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    @include mixins.m-headline-font-white;
+    font-size: 14pt;
+  }
+  .contactCont {
+    @include mixins.flex-r;
+    h1 {
+      width: 99vw;
+    }
+    img {
+      padding: 10px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    p {
+      text-align: center;
+      @include mixins.m-headline-font-pink;
+      font-size: 12pt;
+      margin-top: -10%;
+    }
+  }
+  .socialCont {
+    margin-bottom: -10%;
+    img {
+      margin-top: -30%;
+      width: 180px;
+      height: 180px;
+    }
+    h1 {
+      margin-bottom: 10%;
+    }
+  }
+  .aboutCont {
+    margin-top: -10%;
+    p {
+      text-align: center;
+      color: variables.$pink-font;
+      margin: 0%;
+    }
+  }
+}
