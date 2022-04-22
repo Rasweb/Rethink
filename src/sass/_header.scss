@@ -5,7 +5,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: variables.$light-background;
-  height: 60px;
+  height: 100vh;
   .logo {
     @include mixins.flex-r;
     width: 40px;
@@ -30,5 +30,11 @@ header {
     a:last-child {
       margin-right: 2%;
     }
+  }
+  .hero {
+    background-image: url("../Assets/img/Winter.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40%;
   }
 }

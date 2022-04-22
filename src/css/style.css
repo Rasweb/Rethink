@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #445ea8;
-  height: 60px;
+  height: 100vh;
 }
 header .logo {
   display: flex;
@@ -30,6 +30,12 @@ header .navbar a {
 }
 header .navbar a:last-child {
   margin-right: 2%;
+}
+header .hero {
+  background-image: url("../Assets/img/Winter.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40%;
 }
 
 body {
