@@ -8,13 +8,49 @@ header .logo {
   display: flex;
   flex-direction: row;
   width: 40px;
-  height: 40px;
+  height: 50px;
   margin-top: 2%;
 }
+@media screen and (min-width: 640px) {
+  header .logo {
+    width: 60px;
+    height: 90px;
+    margin-top: 1%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo {
+    width: 78px;
+    height: 155px;
+  }
+}
+@media screen and (min-width: 640px) {
+  header .logo img {
+    margin-top: -54%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo img {
+    margin-bottom: 100%;
+    margin-top: 0;
+  }
+}
 header .logo .logoText {
-  margin-top: 40%;
+  margin-top: 54%;
   margin-left: 30%;
+  font-size: 14pt;
+  font-family: sans-serif;
   color: #f2f3f4;
+}
+@media screen and (min-width: 640px) {
+  header .logo .logoText {
+    font-size: 24pt;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo .logoText {
+    font-size: 26pt;
+  }
 }
 header .navbar {
   display: flex;
@@ -24,9 +60,21 @@ header .navbar {
   margin-top: -6%;
 }
 header .navbar a {
-  margin-left: 10%;
+  margin-left: 7%;
+  font-size: 14pt;
+  font-family: sans-serif;
   color: #f2f3f4;
   text-decoration: none;
+}
+@media screen and (min-width: 640px) {
+  header .navbar a {
+    font-size: 24pt;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .navbar a {
+    font-size: 26pt;
+  }
 }
 header .navbar a:last-child {
   margin-right: 2%;
@@ -36,6 +84,11 @@ header .hero {
   background-size: cover;
   background-position: center;
   height: 40%;
+}
+@media screen and (min-width: 1024px) {
+  header .hero {
+    height: 60%;
+  }
 }
 
 body {
