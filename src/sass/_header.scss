@@ -5,18 +5,30 @@ header {
   display: flex;
   flex-direction: column;
   background-color: variables.$light-background;
+  height: 60px;
   .logo {
+    @include mixins.flex-r;
     width: 40px;
     height: 40px;
+    margin-top: 2%;
+    .logoText {
+      margin-top: 40%;
+      margin-left: 30%;
+      color: variables.$headline;
+    }
   }
   .navbar {
     @include mixins.flex-r;
     justify-content: right;
     width: auto;
+    margin-top: -6%;
     a {
       margin-left: 10%;
       color: variables.$headline;
       text-decoration: none;
+    }
+    a:last-child {
+      margin-right: 2%;
     }
   }
 }

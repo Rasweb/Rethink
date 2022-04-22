@@ -2,21 +2,34 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #445ea8;
+  height: 60px;
 }
 header .logo {
+  display: flex;
+  flex-direction: row;
   width: 40px;
   height: 40px;
+  margin-top: 2%;
+}
+header .logo .logoText {
+  margin-top: 40%;
+  margin-left: 30%;
+  color: #f2f3f4;
 }
 header .navbar {
   display: flex;
   flex-direction: row;
   justify-content: right;
   width: auto;
+  margin-top: -6%;
 }
 header .navbar a {
   margin-left: 10%;
   color: #f2f3f4;
   text-decoration: none;
+}
+header .navbar a:last-child {
+  margin-right: 2%;
 }
 
 body {
